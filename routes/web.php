@@ -12,5 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/home-al', function () {
+    return view('home_al');
+});
+
+Route::get('/pricing', function () {
+    return view('pricing');
+});
+
+Route::get('/pricing-al', function () {
+    return view('pricing_al');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});
+
+Route::get('/faq-al', function () {
+    return view('faq_al');
+});
+
+Route::get('/support', function () {
+    return view('support');
+});
+
+Route::get('/support-al', function () {
+    return view('support_al');
 });
