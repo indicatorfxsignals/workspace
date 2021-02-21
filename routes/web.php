@@ -54,3 +54,36 @@ Route::get('/signup', function () {
 Route::get('/forgetpassword', function () {
     return view('forgetpassword');
 });
+
+Route::get('/terms&conditions', function () {
+    return view('terms&conditions');
+});
+
+Route::get('/terms&conditions_al', function () {
+    return view('terms&conditions_al');
+});
+
+Route::get('/PrivacyPolicy', function () {
+    return view('privacypolicy');
+});
+
+Route::get('/PrivacyPolicy_al', function () {
+    return view('privacypolicy_al');
+});
+
+Route::get('/varify', function () {
+    return view('varify');
+});
+
+Route::get('/newpassword', function () {
+    return view('newpassword');
+});
+
+
+Route::get('/free_membership', function () {
+    return view('free_membership');
+});
+
+Route::get('/premium_membership', function () {
+    return view('premium_membership');
+});
