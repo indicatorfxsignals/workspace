@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-  IndicatorFx Signals- Pricing
+  IndicatorFx Signals | Pricing
 @endsection
 
 @section('link1')

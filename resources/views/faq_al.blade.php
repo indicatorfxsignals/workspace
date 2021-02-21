@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-  IndicatorFx Signals- FAQ
+  IndicatorFx Signals | FAQ
 @endsection
 
 @section('link1')

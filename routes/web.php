@@ -42,3 +42,15 @@ Route::get('/support', function () {
 Route::get('/support-al', function () {
     return view('support_al');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+
+Route::get('/forgetpassword', function () {
+    return view('forgetpassword');
+});
