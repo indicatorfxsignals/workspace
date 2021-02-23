@@ -11,79 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/home-al', function () {
-    return view('home_al');
-});
+Route::get('/','BasicController@index')->name('welcome');
 
-Route::get('/pricing', function () {
-    return view('pricing');
-});
+Auth::routes();
 
-Route::get('/pricing-al', function () {
-    return view('pricing_al');
-});
+Auth::routes(['verify' => true]);
 
-Route::get('/faq', function () {
-    return view('faq');
-});
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/faq-al', function () {
-    return view('faq_al');
-});
+/* Basic Navigation Lists */
 
-Route::get('/support', function () {
-    return view('support');
-});
+Route::get('/pricing', 'BasicController@pricing')->name('pricing');
 
-Route::get('/support-al', function () {
-    return view('support_al');
-});
+Route::get('/faq', 'BasicController@faq')->name('faq');
 
-Route::get('/login', function () {
+Route::get('/support', 'BasicController@support')->name('support');
+
+/* Misc Routes */
+
+Route::get('/privacy-policy', 'BasicController@policy')->name('policy');
+
+Route::get('/terms-and-conditions', 'BasicController@term')->name('term');
+
+
+/*----TEST----*/
+
+Route::get('/ool',function (){
     return view('login');
 });
 
-Route::get('/signup', function () {
-    return view('signup');
-});
 
-Route::get('/forgetpassword', function () {
-    return view('forgetpassword');
-});
-
-Route::get('/terms&conditions', function () {
-    return view('terms&conditions');
-});
-
-Route::get('/terms&conditions_al', function () {
-    return view('terms&conditions_al');
-});
-
-Route::get('/PrivacyPolicy', function () {
-    return view('privacypolicy');
-});
-
-Route::get('/PrivacyPolicy_al', function () {
-    return view('privacypolicy_al');
-});
-
-Route::get('/varify', function () {
-    return view('varify');
-});
-
-Route::get('/newpassword', function () {
-    return view('newpassword');
-});
-
-
-Route::get('/free_membership', function () {
-    return view('free_membership');
-});
-
-Route::get('/premium_membership', function () {
-    return view('premium_membership');
-});

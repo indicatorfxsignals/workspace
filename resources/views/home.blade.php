@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-  IndicatorFx Signals- Profitable Forex & Gold ntraday Signals on 15 minutes chart.
+  IndicatorFx Signals- Profitable Forex & Gold Trade Signals on 15 minutes chart.
 @endsection
 
 @section('link1')
@@ -9,7 +9,7 @@
 @endsection
 
 @section('header')
-    @include('includes.header')
+        @include('includes.header_al')
 @endsection
 
 @section('area1')

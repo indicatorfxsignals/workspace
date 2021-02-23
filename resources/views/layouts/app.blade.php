@@ -1,15 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html  lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
   <meta charset="utf-8">
   <title>@yield('title')</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{asset('fontawesome/css/all.css')}}">
-  <link href="{{asset('http://fonts.googleapis.com/css?family=Cookie')}}" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   @yield('link1')
   @yield('link2')
   @yield('link3')

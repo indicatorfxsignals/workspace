@@ -9,21 +9,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a class="navbar-brand" id="brand" href="#">IndicatorFx Signals</a>
+       <a class="navbar-brand" id="brand" href="{{url('/')}}">IndicatorFx Signals</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" id="center-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Pricing</a></li>
+        <li class="active"><a href="{{url('/')}}">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="{{route('pricing')}}">Pricing</a></li>
        <!-- <li><a href="#">Signal History</a></li> -->
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Support</a></li>
+        <li><a href="{{route('faq')}}">FAQ</a></li>
+        <li><a href="{{route('support')}}">Support</a></li>
       </ul>
 
        <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Login</a></li>
+      <li><a href="{{ route('login') }}">{{__('Login')}}</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
